@@ -23,16 +23,16 @@ Don't waste your time detecting compatibility in your c++. Detective makes it ea
 
 ## About the Project
 
-Detective is a utility c++ library that tries to help you in the tedious process of detecting platform specific stuff. It also provide you facilities to maintain your code consistent.
+Detective is a small, header only, utility c++ library that tries to help you in the tedious process of detecting platform specific stuff. It also provide you facilities to maintain your code consistent.
 
 ### Features
 
-* Compiler detection - [Compiler.h]() (useful to isolate compiler specific code)
-* Function name and signature detection - [FunctionIdentification.h]() (useful to trace out function calls)
-* C++ version and STL detection - [LanguageVersion.h]() (useful to check for language compatibility)
-* OS detection - [OS.h]() (useful to isolate OS specific code)
-* Primitive type management system - [Types.h]() (useful to use consistent types across your entire codebase)
-* Many other utilities - [Utility.h]()
+* Compiler detection - [Compiler.h][compiler-url] (useful to isolate compiler specific code)
+* Function name and signature detection - [FunctionIdentification.h][fid-url] (useful to trace out function calls)
+* C++ version and STL detection - [LanguageVersion.h][langver-url] (useful to check for language compatibility)
+* OS detection - [OS.h][os-url] (useful to isolate OS specific code)
+* Primitive type management system - [Types.h][types-url] (useful to use consistent types across your entire codebase)
+* Many other utilities - [Utility.h][utility-url]
 
 ## Getting Started
 
@@ -86,7 +86,7 @@ Please read [CONTRIBUTING.md]() for details on our code of conduct, and the proc
 
 * **Domenico Mancini** - *Main developer* - [dSyncro](https://github.com/dSyncro)
 
-See also the list of [contributors](https://github.com/Detective/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/dSyncro/Detective/contributors) who participated in this project.
 
 ## License
 
@@ -97,6 +97,13 @@ This project is licensed under the MIT License - see the [LICENSE][license-url] 
 * This project is not tested on all the platform it supports. It is currently tested on:
 	* Windows 10, MSVC
 	* Ubuntu 20.04, GCC
+
+[compiler-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/Compiler.h
+[fid-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/FunctionIdentification.h
+[langver-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/LanguageVersion.h
+[os-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/OS.h
+[types-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/Types.h
+[utility-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/Utility.h
 
 [contributors-shield]: https://img.shields.io/github/contributors/dSyncro/Detective?style=for-the-badge
 [contributors-url]: https://github.com/dSyncro/Detective/graphs/contributors
