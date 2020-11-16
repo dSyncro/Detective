@@ -3,7 +3,8 @@
  * @brief Information about the compiler used.
 */
 
-#pragma once
+#if !defined(DETECTIVE_COMPILER_H)
+#define DETECTIVE_COMPILER_H
 
 #include "Types.h"
 
@@ -242,3 +243,5 @@ namespace Detective {
 		return DETECTIVE_COMPILER_VERSION;
 	}
 }
+
+#endif

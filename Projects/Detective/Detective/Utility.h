@@ -3,7 +3,8 @@
  * @brief Utility functions.
 */
 
-#pragma once
+#if !defined(DETECTIVE_UTILITY_H)
+#define DETECTIVE_UTILITY_H
 
 /**
  * @def DETECTIVE_GET_DATE()
@@ -24,7 +25,9 @@
 #define DETECTIVE_GET_SOURCE_LINE() __LINE__
 
 /**
- * @def DETECTIVE_GET_SOURCE_LINE()
+ * @def DETECTIVE_GET_SOURCE_FILENAME()
  * @brief Get the filename of the source file of this instruction (C-style string).
 */
 #define DETECTIVE_GET_SOURCE_FILENAME() __FILE__
+
+#endif

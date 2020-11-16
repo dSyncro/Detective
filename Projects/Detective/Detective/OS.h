@@ -3,7 +3,8 @@
  * @brief Identify device OS.
 */
 
-#pragma once
+#if !defined(DETECTIVE_OS_H)
+#define DETECTIVE_OS_H
 
 /**
  * @def DETECTIVE_OS
@@ -232,3 +233,5 @@ namespace Detective {
 		return sizeof(void*) == 8;
 	}
 }
+
+#endif

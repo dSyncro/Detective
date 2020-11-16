@@ -3,7 +3,8 @@
  * @brief Use consistent types throughout your entire project.
 */
 
-#pragma once
+#if !defined(DETECTIVE_TYPES_H)
+#define DETECTIVE_TYPES_H
 
 #include <cstdint>
 #include <cmath>
@@ -129,3 +130,5 @@ namespace Detective {
 	/** @brief Generic pointer type.Either 32 or 64 bits dependinding on target architecture. */
 	using Ptr = DETECTIVE_POINTER_TYPE;
 }
+
+#endif

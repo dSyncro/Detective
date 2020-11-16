@@ -3,7 +3,8 @@
  * @brief Identify functions name and signature.
 */
 
-#pragma once
+#if !defined(DETECTIVE_FUNCTION_IDENTIFICATION_H)
+#define DETECTIVE_FUNCTION_IDENTIFICATION_H
 
 #include "Compiler.h"
 
@@ -39,4 +40,6 @@
 #	define DETECTIVE_FUNCTION_SIGNATURE __FUNC__
 #else
 #	define DETECTIVE_FUNCTION_SIGNATURE DETECTIVE_FUNCTION_NAME
+#endif
+
 #endif
