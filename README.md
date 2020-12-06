@@ -6,7 +6,7 @@
 
 # Detective
 
-Don't waste your time detecting compatibility in your c++. Detective makes it easy for you!
+Don't waste your time detecting compatibility in your C++ project. Detective makes it easy for you!
 
 ## Table of Contents
 
@@ -16,14 +16,15 @@ Don't waste your time detecting compatibility in your c++. Detective makes it ea
 	* [Prerequisites](#prerequisites)
 	* [Installation](#installation)
 	* [Usage](#usage)
-	* [Usage Example](#usage-example)
+	* [Wiki](#wiki)
+	* [Example Code](#example-code)
 * [Contributing](#contributing)
 * [License](#license)
 * [Acknowledgements](#acknowledgments)
 
 ## About the Project
 
-Detective is a small, header only, utility c++ library that tries to help you in the tedious process of detecting platform specific stuff. It also provide you facilities to maintain your code consistent.
+Detective is a small, header only, utility C++ library that tries to help you in the tedious process of detecting platform specific stuff. It also provide you facilities to maintain your code consistent.
 
 ### Features
 
@@ -65,7 +66,12 @@ Just include in your code the main header file "Detective.h" (it might be differ
 ```
 Have fun writing your awesome code!
 
-### Usage Example
+### Wiki
+
+In-depth analysis of all the functionalities is present in the [Wiki](https://github.com/dSyncro/Detective/wiki).
+Here you can find all the information you need to use and integrate Detective in your project.
+
+### Example Code
 
 ```cpp
 #include <iostream>
