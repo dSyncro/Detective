@@ -73,10 +73,10 @@
 namespace Detective {
 
 	enum class StandardLibrary {
-		Unknown,
-		LibCpp,
-		LibSTDCpp,
-		MSVC
+		Unknown, /** @brief Using an unknown standard library. */
+		LibCpp, /** @brief LibC++ standard library. */
+		LibSTDCpp, /** @brief LibStdC++ standard library. */
+		MSVC /** @brief Microsoft Visual C++ standard library. */
 	};
 
 	constexpr StandardLibrary getCppSTL()

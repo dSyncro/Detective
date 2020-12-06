@@ -25,6 +25,10 @@
 #	define DETECTIVE_CPP_SUPPORT_GENERALIZED_LAMBDA_CAPTURES
 #endif
 
+#if defined(__cpp_generic_lambdas)
+#	define DETECTIVE_CPP_SUPPORT_GENERIC_LAMBDAS
+#endif
+
 #if defined(__cpp_sized_deallocation)
 #	define DETECTIVE_CPP_SUPPORT_SIZEDDEALLOC
 #endif
