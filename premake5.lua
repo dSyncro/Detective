@@ -32,4 +32,4 @@ group "Dependencies"
 
 group ""
 
-	include "Projects/Detective"
+	include "project"
