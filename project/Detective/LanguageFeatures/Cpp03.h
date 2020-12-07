@@ -19,7 +19,7 @@ namespace Detective {
 	 * @brief Check if exception handling is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasExceptionsSupport()
+	static inline bool hasExceptionsSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_EXCEPTIONS)
 		return true;
@@ -32,7 +32,7 @@ namespace Detective {
 	 * @brief Check if RTTI is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasRuntimeTypeInformationSupport()
+	static inline bool hasRuntimeTypeInformationSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_EXCEPTIONS)
 		return true;
@@ -45,7 +45,7 @@ namespace Detective {
 	 * @brief Check if C++03 standard is fully supported.
 	 * @return Returns true if standard is fully supported. False otherwise.
 	*/
-	constexpr bool hasFullCpp03Support()
+	static inline bool hasFullCpp03Support()
 	{
 	#if defined(DETECTIVE_CPP_STANDARD03_FULL_FEATURED)
 		return true;

@@ -113,7 +113,7 @@ namespace Detective {
 	 * @brief Check if new char types are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasUnicodeCharsSupport()
+	static inline bool hasUnicodeCharsSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_CHARTYPES)
 		return true;
@@ -126,7 +126,7 @@ namespace Detective {
 	 * @brief Check if raw and unicode strings are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasStringLiteralsSupport()
+	static inline bool hasStringLiteralsSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_STRINGLITERALS)
 		return true;
@@ -139,7 +139,7 @@ namespace Detective {
 	 * @brief Check if user defined literals are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasUserDefinedLiteralsSupport()
+	static inline bool hasUserDefinedLiteralsSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_USERLITERALS)
 		return true;
@@ -152,7 +152,7 @@ namespace Detective {
 	 * @brief Check if thread safe static initialization is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasThreadSafeStaticInitSupport()
+	static inline bool hasThreadSafeStaticInitSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_THREADSAFE_STATIC_INIT)
 		return true;
@@ -165,7 +165,7 @@ namespace Detective {
 	 * @brief Check if lambdas are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasLambdasSupport()
+	static inline bool hasLambdasSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_LAMBDAS)
 		return true;
@@ -178,7 +178,7 @@ namespace Detective {
 	 * @brief Check if constexpr is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasConstexprSupport()
+	static inline bool hasConstexprSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_CONSTEXPR)
 		return true;
@@ -191,7 +191,7 @@ namespace Detective {
 	 * @brief Check if range based for loops are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasRangeBasedForSupport()
+	static inline bool hasRangeBasedForSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_RANGEBASEDFOR)
 		return true;
@@ -204,7 +204,7 @@ namespace Detective {
 	 * @brief Check if range based for loops are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasRangeBasedForSupport()
+	static inline bool hasRangeBasedForSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_RANGEBASEDFOR)
 		return true;
@@ -217,7 +217,7 @@ namespace Detective {
 	 * @brief Check if static assert is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasStaticAssertSupport()
+	static inline bool hasStaticAssertSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_STATICASSERT)
 		return true;
@@ -230,7 +230,7 @@ namespace Detective {
 	 * @brief Check if decltype is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasDecltypeSupport()
+	static inline bool hasDecltypeSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_DECLTYPE)
 		return true;
@@ -243,7 +243,7 @@ namespace Detective {
 	 * @brief Check if attributes are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasAttributesSupport()
+	static inline bool hasAttributesSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_ATTRIBUTES)
 		return true;
@@ -256,7 +256,7 @@ namespace Detective {
 	 * @brief Check if noreturn attibute is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasNoReturnSupport()
+	static inline bool hasNoReturnSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_NORETURN)
 		return true;
@@ -269,7 +269,7 @@ namespace Detective {
 	 * @brief Check if carries_dependency attibute is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasCarriesDependencySupport()
+	static inline bool hasCarriesDependencySupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_CARRIESDEPENDENCY)
 		return true;
@@ -282,7 +282,7 @@ namespace Detective {
 	 * @brief Check if rvalue references are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasRvalueReferencesSupport()
+	static inline bool hasRvalueReferencesSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_CARRIESDEPENDENCY)
 		return true;
@@ -295,7 +295,7 @@ namespace Detective {
 	 * @brief Check if variadic templates are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasVariadicTemplatesSupport()
+	static inline bool hasVariadicTemplatesSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_CARRIESDEPENDENCY)
 		return true;
@@ -308,7 +308,7 @@ namespace Detective {
 	 * @brief Check if variadic templates are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasInitializersListsSupport()
+	static inline bool hasInitializersListsSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_INITLISTS)
 		return true;
@@ -321,7 +321,7 @@ namespace Detective {
 	 * @brief Check if delegating constructors are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasDelegatingConstructorsSupport()
+	static inline bool hasDelegatingConstructorsSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_DELEGATING_CONSTRUCTORS)
 		return true;
@@ -334,7 +334,7 @@ namespace Detective {
 	 * @brief Check if NSDMI is supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasNSDMISupport()
+	static inline bool hasNSDMISupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_NSDMI)
 		return true;
@@ -347,7 +347,7 @@ namespace Detective {
 	 * @brief Check if inheriting constructors are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasInheritingConstructorsSupport()
+	static inline bool hasInheritingConstructorsSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_INHERITING_CONSTRUCTORS)
 		return true;
@@ -360,7 +360,7 @@ namespace Detective {
 	 * @brief Check if ref-qualifiers are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasRefQualifiersSupport()
+	static inline bool hasRefQualifiersSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_REFQUALIFIERS)
 		return true;
@@ -373,7 +373,7 @@ namespace Detective {
 	 * @brief Check if template aliases are supported.
 	 * @return Returns true if feature is supported. False otherwise.
 	*/
-	constexpr bool hasTemplateAliasesSupport()
+	static inline bool hasTemplateAliasesSupport()
 	{
 	#if defined(DETECTIVE_CPP_SUPPORT_TEMPLATE_ALIASES)
 		return true;
@@ -386,7 +386,7 @@ namespace Detective {
 	 * @brief Check if C++11 standard is fully supported.
 	 * @return Returns true if standard is fully supported. False otherwise.
 	*/
-	constexpr bool hasFullCpp11Support()
+	static inline bool hasFullCpp11Support()
 	{
 	#if defined(DETECTIVE_CPP_STANDARD11_FULL_FEATURED)
 		return true;

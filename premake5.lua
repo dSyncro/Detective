@@ -1,4 +1,4 @@
-include "./third-party/premake/customization/solution_items.lua"
+include "./third-party/Premaker/customization/solution_items.lua"
 
 workspace "Detective"
 
@@ -26,9 +26,9 @@ workspace "Detective"
 
 outputdir = "%{cfg.architecture}/%{cfg.system}/%{cfg.buildcfg}"
 
-group "Dependencies"
+group "Build"
 
-	include "third-party/premake"
+	include "third-party/Premaker"
 
 group ""
 

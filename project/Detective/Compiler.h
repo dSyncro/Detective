@@ -9,7 +9,7 @@
 #include "Types.h"
 
 /**
- * @def DETECTIVE_COMPILER_VERSION
+ * @def DETECTIVE_COMPILER
  * @brief Describes the compiler used.
  * @see Detective::Compiler
 */
@@ -229,7 +229,7 @@ namespace Detective {
 	 * @brief Get compiler in use.
 	 * @return The compiler used.
 	*/
-	constexpr Compiler getCompiler()
+	static inline Compiler getCompiler()
 	{
 		return DETECTIVE_COMPILER;
 	}
@@ -238,7 +238,7 @@ namespace Detective {
 	 * @brief Get the version of the compiler in use.
 	 * @return The compiler version.
 	*/
-	constexpr ULong getCompilerVersion()
+	static inline ULong getCompilerVersion()
 	{
 		return DETECTIVE_COMPILER_VERSION;
 	}

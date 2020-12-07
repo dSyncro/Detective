@@ -203,7 +203,7 @@ namespace Detective {
 	 * @brief Get device OS.
 	 * @return The device OS.
 	*/
-	constexpr OS getOS()
+	static inline OS getOS()
 	{
 		return DETECTIVE_OS;
 	}
@@ -212,7 +212,7 @@ namespace Detective {
 	 * @brief Get the OS we are compiling to.
 	 * @return The target OS.
 	*/
-	constexpr OS getTargetOS()
+	static inline OS getTargetOS()
 	{
 		return DETECTIVE_TARGET_OS;
 	}
@@ -220,7 +220,7 @@ namespace Detective {
 	/**
 	 * @brief Check if the device has a 32 bit architecture.
 	*/
-	constexpr bool is32Bit()
+	static inline bool is32Bit()
 	{
 		return sizeof(void*) == 4;
 	}
@@ -228,7 +228,7 @@ namespace Detective {
 	/**
 	 * @brief Check if the device has a 64 bit architecture.
 	*/
-	constexpr bool is64Bit()
+	static inline bool is64Bit()
 	{
 		return sizeof(void*) == 8;
 	}

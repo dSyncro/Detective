@@ -79,17 +79,17 @@ namespace Detective {
 		MSVC /** @brief Microsoft Visual C++ standard library. */
 	};
 
-	constexpr StandardLibrary getCppSTL()
+	static inline StandardLibrary getCppSTL()
 	{
 		return DETECTIVE_CPP_STL;
 	}
 
-	constexpr ULong getCppVersion()
+	static inline ULong getCppVersion()
 	{
 		return DETECTIVE_CPP_VERSION;
 	}
 
-	constexpr Byte getCppStandard()
+	static inline Byte getCppStandard()
 	{
 		return DETECTIVE_CPP_STANDARD;
 	}

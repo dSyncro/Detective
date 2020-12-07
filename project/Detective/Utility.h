@@ -7,6 +7,17 @@
 #define DETECTIVE_UTILITY_H
 
 /**
+ * @def DETECTIVE_PURE_STATIC(type)
+ * @brief Generate constructors for pure static classes.
+ * @param Static class name.
+*/
+#define DETECTIVE_PURE_STATIC(type) type() = delete; \
+	type(const type&) = delete;                      \
+	type(type&&) = delete;                           \
+	type& operator =(const type&) = delete;          \
+	type& operator =(type&&) = delete
+
+/**
  * @def DETECTIVE_GET_DATE()
  * @brief Get the date of when this line of code was compiled (C-style string).
 */
