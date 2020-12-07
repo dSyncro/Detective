@@ -28,6 +28,8 @@ Detective is a small, header only, utility C++ library that tries to help you in
 
 ### Features
 
+* Architecture detection - [Architecture.h][architecture-url] (useful to isolate architecture specific code)
+* Portable breakpoint - [Breakpoint.h][breakpoint-url] (useful to launch a breakpoint from code)
 * Compiler detection - [Compiler.h][compiler-url] (useful to isolate compiler specific code)
 * Function name and signature detection - [FunctionIdentification.h][fid-url] (useful to trace out function calls)
 * C++ version and STL detection - [LanguageVersion.h][langver-url] (useful to check for language compatibility)
@@ -104,6 +106,8 @@ This project is licensed under the MIT License - see the [LICENSE][license-url] 
 	* Windows 10, MSVC
 	* Ubuntu 20.04, GCC
 
+[architecture-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/Architecture.h
+[breakpoint-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/Breakpoint.h
 [compiler-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/Compiler.h
 [fid-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/FunctionIdentification.h
 [langver-url]: https://github.com/dSyncro/Detective/blob/main/Projects/Detective/Detective/LanguageVersion.h
