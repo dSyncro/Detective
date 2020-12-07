@@ -7,6 +7,9 @@ project "Detective"
 	targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("%{wks.location}/bin/intermediates/" .. outputdir .. "/%{prj.name}")
 
+	DetectiveIncludeDirs = {}
+	DetectiveIncludeDirs["Detective"] = "%{prj.location}/"
+
 	files
 	{
 		"*.h",
@@ -18,26 +21,5 @@ project "Detective"
 
 	includedirs
 	{
-		"./",
+		DetectiveIncludeDirs,
 	}
-
-	filter "system:windows"
-		systemversion "latest"
-
-	filter "system:linux"
-		systemversion "latest"
-
-	filter "configurations:Debug"
-		defines "HNY_DEBUG"
-		runtime "Debug"
-		symbols "on"
-
-	filter "configurations:Release"
-		defines "HNY_RELEASE"
-		runtime "Release"
-		optimize "on"
-
-	filter "configurations:Dist"
-		defines "HNY_DIST"
-		runtime "Release"
-		optimize "on"
