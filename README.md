@@ -6,7 +6,7 @@
 
 # Detective
 
-Don't waste your time detecting compatibility in your C++ project. Detective makes it easy for you!
+Don't waste your time detecting compatibility in your C++ project. Detective makes it seamless!
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Don't waste your time detecting compatibility in your C++ project. Detective mak
 
 ## About the Project
 
-Detective is a small, header only, utility C++ library that tries to help you in the tedious process of detecting platform specific stuff. It also provide you facilities to maintain your code consistent.
+Detective is a small, header only, utility C++ library that tries to help you in the tedious process of detecting platform specific stuff. It also provides facilities to maintain your code consistent.
 
 ### Features
 
